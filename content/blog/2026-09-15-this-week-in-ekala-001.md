@@ -1,10 +1,10 @@
 +++
 title = "This Week in Ekala #1"
 date = 2026-09-15
-description = "The first issue of This Week in Ekala"
+description = "Darwin cleanup, alias reorganization, and the launch of This Week in Ekala"
 
 [taxonomies]
-tags = ["progress"]
+tags = ["progress", "corepkgs", "darwin"]
 +++
 
 Welcome to the first issue of *This Week in Ekala*, a weekly summary of progress and community updates from the Ekala project.
@@ -15,6 +15,9 @@ Welcome to the first issue of *This Week in Ekala*, a weekly summary of progress
 
 - Launched the "This Week in Ekala" blog
 
-## What's Next
+## corepkgs
 
-- Stay tuned for next week's update!
+- [treewide: drop x86_64-darwin remnants](https://github.com/ekala-project/corepkgs/pull/182)
+  Removed legacy x86_64-darwin configuration remnants across the codebase, laying the groundwork for aarch64-darwin (Apple Silicon) support. Contributed by [@qweered](https://github.com/qweered).
+- [Aliases: move to dedicated folder](https://github.com/ekala-project/corepkgs/pull/191)
+  Relocated `stdenv/aliases.nix` to a dedicated directory, separating internal Ekapkgs aliases from nixpkgs compatibility aliases for cleaner architecture and future independence.
