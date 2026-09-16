@@ -95,7 +95,9 @@ footer a { color: var(--muted); }
 .post-content h3 { margin-top: 1.5rem; margin-bottom: 0.4rem; font-size: 1.15rem; }
 .post-content p { margin-bottom: 1rem; }
 .post-content ul, .post-content ol { margin-bottom: 1rem; padding-left: 1.5rem; }
-.post-content li { margin-bottom: 0.3rem; }
+.post-content li { margin-bottom: 0.75rem; padding-left: 1rem; text-indent: -1rem; }
+.post-content li br + * { text-indent: 0; }
+.post-content li br { display: block; margin-bottom: 0.15rem; }
 .post-content a { color: var(--accent); }
 .post-content code {
   background: var(--code-bg);

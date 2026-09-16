@@ -17,7 +17,7 @@ Welcome to the first issue of *This Week in Ekala*, a weekly summary of progress
 
 ## corepkgs
 
-- [treewide: drop x86_64-darwin remnants](https://github.com/ekala-project/corepkgs/pull/182)
+- [treewide: drop x86_64-darwin remnants](https://github.com/ekala-project/corepkgs/pull/182)<br>
   Removed legacy x86_64-darwin configuration remnants across the codebase, laying the groundwork for aarch64-darwin (Apple Silicon) support. Contributed by [@qweered](https://github.com/qweered).
-- [Aliases: move to dedicated folder](https://github.com/ekala-project/corepkgs/pull/191)
+- [Aliases: move to dedicated folder](https://github.com/ekala-project/corepkgs/pull/191)<br>
   Relocated `stdenv/aliases.nix` to a dedicated directory, separating internal Ekapkgs aliases from nixpkgs compatibility aliases for cleaner architecture and future independence.
