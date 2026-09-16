@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Archive - {{ config.title }}{% endblock %}
+
+{% block content %}
+<h1>Archive</h1>
+<section class="posts">
+  {% for page in paginator.pages %}
+  <article class="post-summary">
+    <h2><a href="{{ page.permalink }}">{{ page.title }}</a></h2>
+    <time datetime="{{ page.date }}">{{ page.date | date(format="%B %e, %Y") }}</time>
+    {% if page.description %}
+    <p>{{ page.description }}</p>
+    {% endif %}
+  </article>
+  {% endfor %}
+</section>
+
+<nav class="pagination">
+  {% if paginator.previous %}
+  <a href="{{ paginator.previous }}">&larr; Newer</a>
+  {% endif %}
+  {% if paginator.next %}
+  <a href="{{ paginator.next }}">Older &rarr;</a>
+  {% endif %}
+</nav>
+{% endblock %}

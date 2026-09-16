@@ -1,0 +1,16 @@
+base_url = "https://ekala-project.github.io/twie"
+title = "This Week in Ekala"
+description = "Weekly progress updates from the Ekala project"
+compile_sass = true
+build_search_index = true
+generate_feeds = true
+feed_filenames = ["atom.xml"]
+taxonomies = [
+  { name = "tags", feed = true },
+]
+
+[markdown.highlighting]
+enabled = true
+theme = "nord"
+
+[extra]

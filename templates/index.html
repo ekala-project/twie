@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+  <h1>This Week in Ekala</h1>
+  <p>Weekly progress updates from the Ekala project.</p>
+</section>
+
+<section class="posts">
+  {% set blog = get_section(path="blog/_index.md") %}
+  {% for post in blog.pages %}
+  <article class="post-summary">
+    <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
+    <time datetime="{{ post.date }}">{{ post.date | date(format="%B %e, %Y") }}</time>
+    {% if post.summary %}
+    <p>{{ post.summary | safe }}</p>
+    {% elif post.description %}
+    <p>{{ post.description }}</p>
+    {% endif %}
+  </article>
+  {% endfor %}
+</section>
+{% endblock %}

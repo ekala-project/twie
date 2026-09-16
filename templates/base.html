@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ config.title }}{% endblock %}</title>
+  <meta name="description" content="{{ config.description }}">
+  {% if config.generate_feeds %}
+  <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="{{ get_url(path='atom.xml') }}">
+  {% endif %}
+  <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="{{ config.base_url }}" class="site-title">{{ config.title }}</a>
+      <div class="nav-links">
+        <a href="{{ get_url(path='@/blog/_index.md') }}">Archive</a>
+        <a href="{{ get_url(path='atom.xml') }}">Feed</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  <footer>
+    <p>&copy; {{ now() | date(format="%Y") }} Ekala Project &middot; Built with <a href="https://www.getzola.org">Zola</a></p>
+  </footer>
+</body>
+</html>
