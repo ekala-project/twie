@@ -25,12 +25,12 @@ Add a new entry to the latest "This Week in Ekala" blog post from the given PR: 
 ## Entry Format
 
 Each entry is exactly two lines within a markdown list:
-- First line: `- [PR title](PR url)`
+- First line: `- [PR title](PR url)<br>` — note the `<br>` at the end for a visible line break
 - Second line (indented with 2 spaces): a brief description of what the PR does, with contributor attribution if the author is not `jonringer`.
 
 Example:
 ```
-- [treewide: drop x86_64-darwin remnants](https://github.com/ekala-project/corepkgs/pull/182)
+- [treewide: drop x86_64-darwin remnants](https://github.com/ekala-project/corepkgs/pull/182)<br>
   Removed legacy x86_64-darwin configuration remnants across the codebase. Contributed by [@qweered](https://github.com/qweered).
 ```
 
