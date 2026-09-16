@@ -14,18 +14,20 @@ Each entry consists of exactly two lines:
 2. An indented line describing the significance of the change
 
 ```markdown
-- [PR title](https://github.com/ekala-project/repo/pull/NNN)
+- [PR title](https://github.com/ekala-project/repo/pull/NNN)<br>
   A statement about why this change matters or what it enables.
 ```
+
+The `<br>` at the end of the first line ensures a visible line break between the linked title and the indented description.
 
 Example:
 
 ```markdown
 ## corepkgs
 
-- [treewide: drop x86_64-darwin remnants](https://github.com/ekala-project/corepkgs/pull/182)
+- [treewide: drop x86_64-darwin remnants](https://github.com/ekala-project/corepkgs/pull/182)<br>
   Removed legacy x86_64-darwin configuration remnants, laying the groundwork for aarch64-darwin (Apple Silicon) support. Contributed by [@qweered](https://github.com/qweered).
-- [Aliases: move to dedicated folder](https://github.com/ekala-project/corepkgs/pull/191)
+- [Aliases: move to dedicated folder](https://github.com/ekala-project/corepkgs/pull/191)<br>
   Relocated `stdenv/aliases.nix` to a dedicated directory, separating internal Ekapkgs aliases from nixpkgs compatibility aliases for cleaner architecture and future independence.
 ```
 
