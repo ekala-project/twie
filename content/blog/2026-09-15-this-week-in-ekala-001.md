@@ -21,3 +21,7 @@ Welcome to the first issue of *This Week in Ekala*, a weekly summary of progress
   Removed legacy x86_64-darwin configuration remnants across the codebase, laying the groundwork for aarch64-darwin (Apple Silicon) support. Contributed by [@qweered](https://github.com/qweered).
 - [Aliases: move to dedicated folder](https://github.com/ekala-project/corepkgs/pull/191)<br>
   Relocated `stdenv/aliases.nix` to a dedicated directory, separating internal Ekapkgs aliases from nixpkgs compatibility aliases for cleaner architecture and future independence.
+- [Enable structured Attrs by default](https://github.com/ekala-project/corepkgs/pull/196)<br>
+  Enabled `structuredAttrs = true` by default in stdenv, a deliberate breaking change from nixpkgs that moves toward a cleaner, more structured build environment.
+- [Add config.overlays.linux](https://github.com/ekala-project/corepkgs/pull/198)<br>
+  Added a dedicated option for Linux kernel overlays, allowing customization without needing to manipulate `kernelPackagesExtensions` directly.
