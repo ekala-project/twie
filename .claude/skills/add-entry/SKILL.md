@@ -22,6 +22,8 @@ Add a new entry to the latest "This Week in Ekala" blog post from the given PR: 
 
 5. **Verify** — Run `nix-shell -p zola --run "zola build"` to confirm the site still builds.
 
+6. **Commit** — Stage the modified blog post file and commit with the message `YYYY-MM-DD: <PR title>`, where `YYYY-MM-DD` is today's date and `<PR title>` is the title of the PR that was added.
+
 ## Entry Format
 
 Each entry is exactly two lines within a markdown list:
