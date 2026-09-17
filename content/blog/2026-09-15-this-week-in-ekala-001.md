@@ -25,3 +25,5 @@ Welcome to the first issue of *This Week in Ekala*, a weekly summary of progress
   Enabled `structuredAttrs = true` by default in stdenv, a deliberate breaking change from nixpkgs that moves toward a cleaner, more structured build environment.
 - [Add config.overlays.linux](https://github.com/ekala-project/corepkgs/pull/198)<br>
   Added a dedicated option for Linux kernel overlays, allowing customization without needing to manipulate `kernelPackagesExtensions` directly.
+- [Hardware enablement, ISO image](https://github.com/ekala-project/corepkgs/pull/189)<br>
+  Added hardware enablement modules for audio, camera, fingerprint readers, printing, NVIDIA, power management, scanner, and Thunderbolt, along with an ISO image target.
