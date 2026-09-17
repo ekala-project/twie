@@ -22,7 +22,7 @@ Welcome to the first issue of *This Week in Ekala*, a weekly summary of progress
 - [Aliases: move to dedicated folder](https://github.com/ekala-project/corepkgs/pull/191)<br>
   Relocated `stdenv/aliases.nix` to a dedicated directory, separating internal Ekapkgs aliases from nixpkgs compatibility aliases for cleaner architecture and future independence.
 - [Enable structured Attrs by default](https://github.com/ekala-project/corepkgs/pull/196)<br>
-  Enabled `structuredAttrs = true` by default in stdenv, a deliberate breaking change from nixpkgs that moves toward a cleaner, more structured build environment.
+  Enabled `structuredAttrs = true` by default in stdenv, a deliberate breaking change from nixpkgs. Requirement for potential "nushell as builder" future migration.
 - [Add config.overlays.linux](https://github.com/ekala-project/corepkgs/pull/198)<br>
   Added a dedicated option for Linux kernel overlays, allowing customization without needing to manipulate `kernelPackagesExtensions` directly.
 - [Hardware enablement, ISO image](https://github.com/ekala-project/corepkgs/pull/189)<br>
