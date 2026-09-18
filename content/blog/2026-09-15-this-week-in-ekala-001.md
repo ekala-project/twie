@@ -29,3 +29,5 @@ Welcome to the first issue of *This Week in Ekala*, a weekly summary of progress
   Added hardware enablement modules for audio, camera, fingerprint readers, printing, NVIDIA, power management, scanner, and Thunderbolt, along with an ISO image target.
 - [CMake entries](https://github.com/ekala-project/corepkgs/pull/201)<br>
   Leverages `__structuredAttrs` to provide a more natural way to define CMake build configurations.
+- [Meson entries](https://github.com/ekala-project/corepkgs/pull/203)<br>
+  Adds structured attribute support for Meson builds, mirroring the CMake entries approach for a more natural build definition.
