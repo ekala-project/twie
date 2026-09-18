@@ -10,7 +10,6 @@ taxonomies = [
 ]
 
 [markdown.highlighting]
-enabled = true
 theme = "nord"
 
 [extra]
