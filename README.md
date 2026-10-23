@@ -2,6 +2,8 @@
 
 A weekly highlight of activities, progress, and community updates from the [Ekala project](https://github.com/ekala-project).
 
+[Rendered This Week in Ekala website](https://ekala-project.github.io/twie/).
+
 Built with [Zola](https://www.getzola.org) and hosted on GitHub Pages.
 
 ## License
