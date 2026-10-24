@@ -18,6 +18,7 @@ Create a new "This Week in Ekala" blog post, auto-populated with merged PRs from
 - `ekala-project/ekapkgs-update`
 - `ekala-project/python-packages`
 - `ekala-project/ekafleet`
+- `ekala-project/eeps`
 
 ## Steps
 
@@ -28,13 +29,23 @@ Create a new "This Week in Ekala" blog post, auto-populated with merged PRs from
 
 ### 2. Discover merged PRs
 
-For each repository listed above, run:
+For each repository listed above (except `eeps`), run:
 
 ```
 gh search prs --repo OWNER/REPO --merged --merged-at ">CUTOFF_DATE" --json number,title,repository --limit 100
 ```
 
 Collect all results. Skip any repository that returns zero results.
+
+#### eeps (special handling)
+
+For `ekala-project/eeps`, any PR activity (opened, closed, or merged) is a mention candidate. Search for all PR changes in the period:
+
+```
+gh search prs --repo ekala-project/eeps --updated ">CUTOFF_DATE" --json number,title,state,repository --limit 100
+```
+
+Include PRs that were opened, closed, or merged during the period. Each should be noted with its state change (e.g. "opened", "merged", "closed").
 
 ### 3. Fetch PR details
 
